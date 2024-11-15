@@ -48,7 +48,6 @@ func normalizeDeps(module string, deps []string) Dependencies {
 }
 
 func moduleName(start string) string {
-	const gomod = "go.mod"
 	currDir, err := filepath.Abs(start)
 	if err != nil {
 		logrus.Fatal(err.Error())
